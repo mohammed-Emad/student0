@@ -1,10 +1,10 @@
 
-**install gcc and tools in ubuntu or *.deb **
+**install gcc and tools in ubuntu or** ***.deb**
 ```
 sudo apt-get update
 sudo apt-get install build-essential manpages-dev
 ```
-**install gcc and tools in CentOS-Fedora or *.rpm **
+**install gcc and tools in CentOS-Fedora or** ***.rpm**
 ```
 yum groupinstall 'Development Tools'
 ```
