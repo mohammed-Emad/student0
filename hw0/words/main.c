@@ -46,7 +46,18 @@ WordCount *word_counts = NULL;
  */
 int num_words(FILE* infile) {
   int num_words = 0;
-
+  char line;
+  int state = 1;
+  while((line = fgetc(infile)) != EOF)
+  {
+      line = tolower(line);
+      if (isspace(line)) {
+         state = 1;
+      }else {
+      if (state) num_words++;
+         state = 0;
+      }
+  }
   return num_words;
 }
 
