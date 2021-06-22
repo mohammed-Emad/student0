@@ -131,6 +131,9 @@ int main (int argc, char *argv[]) {
     // At least one file specified. Useful functions: fopen(), fclose().
     // The first file can be found at argv[optind]. The last file can be
     // found at argv[argc-1].
+    infile = fopen(argv[argc-1], "r");
+    total_words = num_words(infile);
+    fclose(infile);
   }
 
   if (count_mode) {
